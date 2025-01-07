@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import '../assets/css/Signup.css'
 
 function Signup() {
   const [firstname, setFName] = useState('')
@@ -21,7 +22,7 @@ function Signup() {
     navigate('/login')
   }
   return (
-    <div>
+    <div className='container'>
       <form onSubmit={signup}>
         <br />
         <input type="text" placeholder='firstname' value={firstname} onChange={(e) => setFName(e.target.value)} required/>

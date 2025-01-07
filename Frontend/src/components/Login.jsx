@@ -28,7 +28,7 @@ const Login = () => {
   }
 
   return (
-    <div>
+    <div className='container'>
       <form>
         <br />
         <input type="text" placeholder='email' value={email} onChange={(e) => setemail(e.target.value)} required/>
